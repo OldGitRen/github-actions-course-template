@@ -19,6 +19,7 @@ jobs:
         run: |
           npm install 
           # npm audit fix --force
+          write-host $LASTEXITCODE
           npm run build
 
   test:
