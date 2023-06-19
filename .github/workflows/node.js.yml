@@ -30,7 +30,7 @@ jobs:
         run: |
           node -v
           set SET NODE_OPTIONS=--openssl-legacy-provider
-          npm ci 
+          npm install 
           # npm audit fix --force
           npm run build
 
