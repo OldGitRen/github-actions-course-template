@@ -54,6 +54,7 @@ jobs:
     - name: npm install and test
       run: |
         node -v
+        set SET NODE_OPTIONS=--openssl-legacy-provider
         npm ci
         npm audit fix --force
         npm test -- -u
