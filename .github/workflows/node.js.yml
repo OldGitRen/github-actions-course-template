@@ -67,6 +67,6 @@ jobs:
         npm install
         # npm audit fix --force
         echo test setup done
-        npm test
+        npm test -- -u
       env: 
         CI: true
