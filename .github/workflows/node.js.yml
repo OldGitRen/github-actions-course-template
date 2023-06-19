@@ -57,6 +57,7 @@ jobs:
         set SET NODE_OPTIONS=--openssl-legacy-provider
         npm install
         # npm audit fix --force
-        # npm test -- -u
+        echo test setup done
+        npm test -- -u
       env: 
         CI: true
