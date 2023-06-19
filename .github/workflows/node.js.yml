@@ -67,6 +67,6 @@ jobs:
         npm install
         # npm audit fix --force
         echo test setup done
-        npm test -- -u
+        npm test -- -u # need to remove old snapshot, else it exits with failure
       env: 
         CI: true
